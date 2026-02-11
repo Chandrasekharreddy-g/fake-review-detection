@@ -1,0 +1,53 @@
+:root{
+	--bg: #0f1724;
+	--surface: #0b1220;
+	--card: #0f1724;
+	--muted: #9aa4b2;
+	--accent: #4f8ef7;
+	--glass: rgba(255,255,255,0.03);
+}
+
+*{box-sizing:border-box}
+body{
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background: linear-gradient(180deg,#071022 0%, #071826 100%);
+	color: #e6eef8;
+	margin:0;
+	-webkit-font-smoothing:antialiased;
+}
+
+.nav{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter: blur(4px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.brand{font-weight:700;color:var(--accent);letter-spacing:0.3px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+.hero{display:flex;align-items:center;justify-content:center;padding:56px 20px}
+.hero-inner{max-width:920px;text-align:center}
+.hero h1{font-size:34px;margin:0 0 12px;color:#fff}
+.subtitle{color:var(--muted);margin:0 0 22px}
+.actions{display:flex;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#60a8ff);color:#07203b;border:none}
+
+.cards{max-width:1100px;margin:20px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:0 20px}
+.card{background:var(--glass);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin:0 0 8px}
+.card p{color:var(--muted);margin:0}
+
+.site-footer{max-width:1100px;margin:36px auto 60px auto;padding:0 20px;color:var(--muted);text-align:center}
+
+/* Demo page adjustments */
+.wrap{max-width:960px;margin:28px auto;padding:20px;background:transparent}
+.lead{color:var(--muted)}
+.result{margin-top:16px;padding:14px;border-radius:8px;background:#071226;border:1px solid rgba(255,255,255,0.03)}
+.controls{display:flex;gap:10px;margin-top:12px}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:8px}
+.spinner{display:inline-block;width:18px;height:18px;border:3px solid rgba(255,255,255,0.06);border-top-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite}
+
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media (max-width:900px){
+	.cards{grid-template-columns:1fr}
+	.hero h1{font-size:26px}
+}
+

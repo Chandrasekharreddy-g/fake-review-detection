@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Fake Review Detection</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="brand">FakeReviewAI</div>
+        <nav>
+          <a href="demo.html">Demo</a>
+          <a href="../app/streamlit_app.py">Streamlit</a>
+          <a href="../README.md">Docs</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <h1>Detect Fake vs Genuine Reviews</h1>
+        <p class="subtitle">A lightweight NLP demo that classifies product or restaurant reviews as <strong>Genuine</strong> or <strong>Fake</strong>.</p>
+
+        <div class="actions">
+          <a class="btn primary" href="demo.html">Try Demo</a>
+          <a class="btn" href="../app/web_app.py">Run Web App</a>
+        </div>
+      </div>
+    </main>
+
+    <section class="cards">
+      <div class="card">
+        <h3>How it works</h3>
+        <p>Preprocess text, extract TF-IDF + simple features (sentiment, length, punctuation), and classify with multiple models.</p>
+      </div>
+      <div class="card">
+        <h3>Quick start</h3>
+        <p>Install dependencies, train using your dataset, then start the Flask demo. See <code>README.md</code> for commands.</p>
+      </div>
+      
+    </section>
+
+    <footer class="site-footer">
+      <div>© 2026 FakeReviewAI • Built as a demo</div>
+    </footer>
+  </body>
+</html>
